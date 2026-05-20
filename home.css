@@ -176,6 +176,19 @@
   gap: 18px;
 }
 
+.education-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.education-title img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
 .timeline-item {
   display: grid;
   gap: 4px;

@@ -6,6 +6,10 @@ $files = @(
   (Join-Path $root "projects/mining-case.html")
 )
 
+$requiredAssets = @(
+  (Join-Path $root "assets/images/neu-logo.png")
+)
+
 $forbidden = @(
   "产品经理",
   "产品作品集",
@@ -25,7 +29,9 @@ $requiredIndex = @(
   "1046649659@qq.com",
   "https://github.com/1046649659-cmyk",
   "Resume.pdf",
-  "projects/mining-case.html"
+  "projects/mining-case.html",
+  "assets/images/neu-logo.png",
+  "东北大学校徽"
 )
 
 $requiredCase = @(
@@ -40,6 +46,12 @@ $requiredCase = @(
 foreach ($file in $files) {
   if (-not (Test-Path -LiteralPath $file)) {
     throw "Missing required file: $file"
+  }
+}
+
+foreach ($asset in $requiredAssets) {
+  if (-not (Test-Path -LiteralPath $asset)) {
+    throw "Missing required asset: $asset"
   }
 }
 
