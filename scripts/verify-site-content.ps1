@@ -43,6 +43,14 @@ $requiredCase = @(
   "技术项目"
 )
 
+$requiredHomeCss = @(
+  "grid-template-columns: 150px minmax(0, 1fr)",
+  "gap: 24px",
+  "width: 150px",
+  "height: 190px",
+  "object-fit: contain"
+)
+
 foreach ($file in $files) {
   if (-not (Test-Path -LiteralPath $file)) {
     throw "Missing required file: $file"
@@ -73,6 +81,13 @@ $case = Get-Content -LiteralPath (Join-Path $root "projects/mining-case.html") -
 foreach ($term in $requiredCase) {
   if (-not $case.Contains($term)) {
     throw "Missing case-page required content: $term"
+  }
+}
+
+$homeCss = Get-Content -LiteralPath (Join-Path $root "home.css") -Raw -Encoding UTF8
+foreach ($term in $requiredHomeCss) {
+  if (-not $homeCss.Contains($term)) {
+    throw "Missing hero photo CSS requirement: $term"
   }
 }
 

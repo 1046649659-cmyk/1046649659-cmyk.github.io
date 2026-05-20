@@ -12,16 +12,21 @@
 
 .profile-hero {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
   padding: 48px 0 36px;
 }
 
+.hero-photo {
+  padding-top: 34px;
+}
+
 .hero-photo img {
-  width: 180px;
-  height: 228px;
-  object-fit: cover;
+  width: 150px;
+  height: 190px;
+  object-fit: contain;
+  background: #fff;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
@@ -228,8 +233,8 @@
   }
 
   .hero-photo img {
-    width: 140px;
-    height: 178px;
+    width: 132px;
+    height: 168px;
   }
 
   .quick-facts,
