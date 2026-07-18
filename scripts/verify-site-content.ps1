@@ -17,15 +17,28 @@ $forbidden = @(
   "Product Manager",
   "product manager",
   "AI 产品",
-  "产业数字化产品"
+  "产业数字化产品",
+  "通用软件开发实习生",
+  "Software Developer Internship",
+  "欢迎交流软件开发实习机会"
 )
 
 $requiredIndex = @(
-  "通用软件开发实习生",
+  "央国企技术与管理岗位",
+  "生产运营与数字化",
+  "State-owned Enterprise Career",
+  "校园经历",
+  "科学技术协会办公室副部长",
+  "教学办学生助理",
+  "人文艺术中心部员",
+  "自动化类 2005 班组织委员",
+  "连续两年东北大学优秀学生一等奖学金",
+  "未来太湖科技奖学金",
+  "最具影响力毕业生",
   "Python",
   "数据处理",
-  "优化建模",
-  "工程基础",
+  "生产优化",
+  "流程规范",
   "1046649659@qq.com",
   "https://github.com/1046649659-cmyk",
   "Resume.pdf",
